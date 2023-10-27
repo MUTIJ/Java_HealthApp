@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.findmyage">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/healthcare"
+        android:label="Health Care"
+        android:roundIcon="@drawable/healthcare"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FindMyAge"
+        tools:targetApi="31">
+        <activity
+            android:name="upload.AddDetails"
+            android:exported="false" />
+        <activity
+            android:name="Admin.login"
+            android:exported="false"
+            android:label="Login" />
+        <activity
+            android:name="Admin.signUp"
+            android:exported="false"
+            android:label="Sign Up" />
+        <activity
+            android:name=".FindDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
